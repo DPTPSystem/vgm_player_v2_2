@@ -131,7 +131,7 @@ további 4.8uS idővel csökkenthető.
    	~ 51uS ideig dolgozik 1 hangmintán, pedig csak 22.7uS idő áll rendelkezésére. 
    	
 # 2023.02.10. Utolsó agyalásom eredménye és ezzel lehet is zárni a projektet.
-   	- Teljes átszervezés kapcsán ara jutottam, hogy a mérések alapján, ha csak 
+   	- Teljes átszervezés kapcsán arra jutottam, hogy a mérések alapján, ha csak 
    	az adatok kiküldésést tenném a 22.7uS-os megszakításba, akkor sem lenne jó
    	az eredmény, mert főprogramomban tesztelt VGM kiértékelési struktúra lefutása
    	meghaladja a megszakítási időablakot. Minden erőfeszítésem ellenére sem tudom
