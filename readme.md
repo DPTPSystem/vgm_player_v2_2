@@ -11,7 +11,9 @@
 * Töltsd le a vgm_sent_release_2023_02_10.zip fájlt, majd tömörítsd ki
 - a programmal azonos mappába másolj be pár VGM fájlt, amely a felsorólt konzolokra készült
 - ha nem a program könyvtárába másolod be a VGM fájlokat, akkor meg kell adni a teljes utvonalat
-- vgm_sent COM? filename.vgm
+
+	`vgm_sent COM? filename.vgm`
+	
 - a fentebb látható módon índítható a program, a vgm_sent maga az alkalmazás, nem kötelező a kiterjesztést megadni
 - COM? - a kérdőjel helyére a windows álltal az eszközhöz rendelt csatorna száma kerül, pl.: COM7
 - Az alkalmazás Win64 operációs rendszeren volt fejlesztve .NET 4.5-ös keretrendszerrel.
@@ -37,7 +39,7 @@ ekkor a PCM adatokat 16kbyte méretig feltölti a PIC flashmemóriájába.
 
 	`vgm.hex`
 
-A hex állomány betöthető a PIC-ben a kristály alatt kialakított programozói felületen,
+- A hex állomány betöthető a PIC-be a kristály alatt kialakított programozói felületen,
 amely szabványos ICSP felület (lásd a PCB-n a felíratozást). Ajánlott programozó PicKit2
 
 # Program opciónális beállításai
