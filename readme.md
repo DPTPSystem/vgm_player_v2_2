@@ -1,9 +1,12 @@
 # VGM Player v2.2
 * DPTP System - VGM Player 2.2 YM2612 + SN76489
 * E-mail: don_peter@freemail.hu
+* [neo-geo.hu](http://neo-geo.hu)
 * PIC18F442, PIC18F452, PIC18F46K22
 * SEGA GAME GEAR, SEGA MESTER SYSTEM, SEGA MEGA DRIVE
 * 44100Hz megzsakításban kiszolgálva, 22.7uS
+
+![alt text](http://neo-geo.hu/news/don_peter/new44/vgm_v2_0.jpg "VGM Player v2.2")
 
 # VGM fájlok feltöltése az eszközre
 * Töltsd le a vgm_sent_release_2023_02_10.zip fájlt, majd tömörítsd ki
@@ -28,6 +31,7 @@ Ekkor a zene lejátszás gombnyomásra indul.
 elegendő lenne a VGM normális lejátszásához. Ha hazsnálni akarod a PIC flash memóriáját
 akkor a main.c fájlban keresd a következő sort és állítsd át a 0x0000-át 0x4000-re,
 ekkor a PCM adatokat 16kbyte méretig feltölti a PIC flashmemóriájába.
+
 	#define MaxPCMData		0x0000	// 16Kbyte (0x4000)
 
 - A program lefordított bináris állománya a következő:
