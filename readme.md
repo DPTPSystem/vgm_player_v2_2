@@ -96,49 +96,49 @@ további 4.8uS idővel csökkenthető.
 - - 0xE0-ás parancs esetében 19.2uS/2 = 9.6uS
    	
 # Update - 2023-02-09.
-   	SPI olvasást a minimálisra redukáltam, nincs memóriára várakozás és
-   	semmi, ami tovább lassítaná a forgalmat. Sebesség így maximalizált.
-   	Sample = MemReadFast(MemCim);		// 22.4uS/2 = 11.2uS
-   	WaveSample();						// 62uS/2 = 31uS
-   	Megszakításba a nyers adatokkal is kipróbáltam, de a PCM adatok esetében
-   	még mindig nem elégséges a sebesség
-   	Megszakításba pakolva mindent egy semleges 0x00-ás címmel, 140uS/2 = 70uS a lefutás
-   	ami durva, mert 44.5/2 = 22.7uS-nél nem lehetne több. (ennyi a megszakítési ablak)
-   	Ha a megszakításban waitSamples = WaveSample(); fuggvény van és az a 
-   	MemReadFast(MemCim)-es WaveSample()-t hívja meg, akkor a lefutás 158.9uS/2 = 79.45uS
-   	Kető közt 18.9uS/2 = 9.45uS idő rés van, de ennél nem tudom, hogy lehetne még többet 
-   	kighozni a PIC-ből, max assembly programmal.
-   	Ömlesztett kóddal 147.8uS/2 = 73.9uS
-   	
-   	Főprogram 2.4uS/2 = 1.2uS egy ciklus ha UART feltételek benne vannak, ha csak a
-   	LED billegtetése, akkor 600nS/2 = 300nS
-   	Főprogramba átpakolva a teljes kódot, gyorsabb, de az időzítés ebben az
-   	esetbe nem teljesen megoldható, mert 2 hangminta közt eltelt idő attól 
-   	számít, hogy mennyi idő alatt értékelődik ki a teljes VGM struktúra
-   	és ebből le kellene vonni az alap idözítést.
-   	****************************************************************************
-   	* Nagyon fontos: 2023-02-09. Este
-   	* Nem vettem észre (nem értem miért nem tűnt fel korábban) a mérések közben, 
-   	* hogy amit mérek az két jel vagy is a LED egyszer világít, egyszer nem. 
-   	* A periódikus jelem, amit mérek azt minden esetben 2 lefutás eredménye. 
-   	* Tehát minden mérésem osztani kell kettővel és ez lesz az egyszeri lefutás ideje.
-   	****************************************************************************
-   	Megszakításban az if feltételes verzió 96.59uS/2 = 48.3uS 0x00-ás paranccsal.
-   	
-   	Nos többedjére is oda jutok, hogy a program bárhogy optimalizálom, nem képes
-   	22.7uS alatt vagy is egy megszakítási ablak alatt végbe menni. Emiatt lassú
-   	a zene lejátszása. A program jelenleg az összes optimalizással egyben is
-   	~ 51uS ideig dolgozik 1 hangmintán, pedig csak 22.7uS idő áll rendelkezésére. 
+SPI olvasást a minimálisra redukáltam, nincs memóriára várakozás és
+semmi, ami tovább lassítaná a forgalmat. Sebesség így maximalizált.
+Sample = MemReadFast(MemCim);		// 22.4uS/2 = 11.2uS
+WaveSample();						// 62uS/2 = 31uS
+Megszakításba a nyers adatokkal is kipróbáltam, de a PCM adatok esetében
+még mindig nem elégséges a sebesség
+Megszakításba pakolva mindent egy semleges 0x00-ás címmel, 140uS/2 = 70uS a lefutás
+ami durva, mert 44.5/2 = 22.7uS-nél nem lehetne több. (ennyi a megszakítési ablak)
+Ha a megszakításban waitSamples = WaveSample(); fuggvény van és az a 
+MemReadFast(MemCim)-es WaveSample()-t hívja meg, akkor a lefutás 158.9uS/2 = 79.45uS
+Kető közt 18.9uS/2 = 9.45uS idő rés van, de ennél nem tudom, hogy lehetne még többet 
+kighozni a PIC-ből, max assembly programmal.
+Ömlesztett kóddal 147.8uS/2 = 73.9uS
+
+Főprogram 2.4uS/2 = 1.2uS egy ciklus ha UART feltételek benne vannak, ha csak a
+LED billegtetése, akkor 600nS/2 = 300nS
+Főprogramba átpakolva a teljes kódot, gyorsabb, de az időzítés ebben az
+esetbe nem teljesen megoldható, mert 2 hangminta közt eltelt idő attól 
+számít, hogy mennyi idő alatt értékelődik ki a teljes VGM struktúra
+és ebből le kellene vonni az alap idözítést.
+****************************************************************************
+* Nagyon fontos: 2023-02-09. Este
+* Nem vettem észre (nem értem miért nem tűnt fel korábban) a mérések közben, 
+* hogy amit mérek az két jel vagy is a LED egyszer világít, egyszer nem. 
+* A periódikus jelem, amit mérek azt minden esetben 2 lefutás eredménye. 
+* Tehát minden mérésem osztani kell kettővel és ez lesz az egyszeri lefutás ideje.
+****************************************************************************
+Megszakításban az if feltételes verzió 96.59uS/2 = 48.3uS 0x00-ás paranccsal.
+
+Nos többedjére is oda jutok, hogy a program bárhogy optimalizálom, nem képes
+22.7uS alatt vagy is egy megszakítási ablak alatt végbe menni. Emiatt lassú
+a zene lejátszása. A program jelenleg az összes optimalizással egyben is
+~ 51uS ideig dolgozik 1 hangmintán, pedig csak 22.7uS idő áll rendelkezésére. 
    	
 # 2023.02.10. Utolsó agyalásom eredménye és ezzel lehet is zárni a projektet.
-   	- Teljes átszervezés kapcsán arra jutottam, hogy a mérések alapján, ha csak 
-   	az adatok kiküldésést tenném a 22.7uS-os megszakításba, akkor sem lenne jó
-   	az eredmény, mert főprogramomban tesztelt VGM kiértékelési struktúra lefutása
-   	meghaladja a megszakítási időablakot. Minden erőfeszítésem ellenére sem tudom
-   	31uS alá vinni a VGM feldolgozás idejét. Ezzel egyértelmáen bebizonyosodott,
-   	hogy a PIC18F452 nem képes a VGM feldolgozásra, ha az adatokban PCM adat is
-   	van. Így a progjektet ezzel le is zárom. Továbbiakban más MCU-ra fejlesztek
-   	tovább.
-   	- PCM adatok PIC flash-be mentését kikapcsoltam, mert azt megszakításban nem
-   	tudja kiszolgálni. PCM nélküli VGM-ek esetén használható a program, talán
-   	kisebb PCM adatok esetén is elfogadható, de semmi kép nem tökéletes.
+- Teljes átszervezés kapcsán arra jutottam, hogy a mérések alapján, ha csak 
+az adatok kiküldésést tenném a 22.7uS-os megszakításba, akkor sem lenne jó
+az eredmény, mert főprogramomban tesztelt VGM kiértékelési struktúra lefutása
+meghaladja a megszakítási időablakot. Minden erőfeszítésem ellenére sem tudom
+31uS alá vinni a VGM feldolgozás idejét. Ezzel egyértelmáen bebizonyosodott,
+hogy a PIC18F452 nem képes a VGM feldolgozásra, ha az adatokban PCM adat is
+van. Így a progjektet ezzel le is zárom. Továbbiakban más MCU-ra fejlesztek
+tovább.
+- PCM adatok PIC flash-be mentését kikapcsoltam, mert azt megszakításban nem
+tudja kiszolgálni. PCM nélküli VGM-ek esetén használható a program, talán
+kisebb PCM adatok esetén is elfogadható, de semmi kép nem tökéletes.
