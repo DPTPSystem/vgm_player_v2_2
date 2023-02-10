@@ -1,7 +1,6 @@
 # VGM Player v2.2
 * DPTP System - VGM Player 2.2 YM2612 + SN76489
-* E-mail: don_peter@freemail.hu
-* [neo-geo.hu](http://neo-geo.hu)
+* [neo-geo.hu/VGM Player 2.2](http://neo-geo.hu/index.php?modul=news#nwtl)
 * PIC18F442, PIC18F452, PIC18F46K22
 * SEGA GAME GEAR, SEGA MESTER SYSTEM, SEGA MEGA DRIVE
 * 44100Hz megzsakításban kiszolgálva, 22.7uS
@@ -36,7 +35,7 @@ ekkor a PCM adatokat 16kbyte méretig feltölti a PIC flashmemóriájába.
 
 - A program lefordított bináris állománya a következő:
 
-	vgm.hex
+	[code]vgm.hex[/code]
 
 A hex állomány betöthető a PIC-ben a kristály alatt kialakított programozói felületen,
 amely szabványos ICSP felület (lásd a PCB-n a felíratozást). Ajánlott programozó PicKit2
@@ -47,6 +46,8 @@ amely szabványos ICSP felület (lásd a PCB-n a felíratozást). Ajánlott prog
 - LTC6903 init 
 - SN76489N -	// 3.58MHz - 0xBD24
 - YM2612 - 	// 7.67 MHz - 0xCE40
+
+![alt text](http://neo-geo.hu/galeria/don_peter/vgm/vgm_2_0_a.png "VGM Player v2.2")
 
 # Prgram fejlődése és feljelsztések 2019-as évben
 * Tesztelések a VGM sebességét illetően, a következők voltak
