@@ -85,18 +85,15 @@ is igényelhetnek, amelyek önmagukban is sok időt emésztenek fel.
 - 1 ugrás 8 órajel vagy is ~200nS
 
 # Újabb optimalizálás - 2023-02-08.
-    SPI olvasás átszervezése, amely az alap olvasái adatokat a következő 
-    képpen módosította:
-   	Sample = MemRead(MemCim);			// 64.4uS/2 = 32.2uS
-   	Sample = MemReadFast(MemCim);		// 34.2uS/2 = 17.1uS
-   	WaveSample();						// 99.2uS/2 =  49.6uS - optimalizáltan 69uS/2 = 34.5uS
-   	Az olvasási ciklusokat összevontam így nincs függvényugrás ezzel felére
-   	csökkentve a szükséges olvasási időt
-   	Következő lehetőség még a VGM fájl kiértékelésének átszervezése, 
-   	főként az olvasásoknál. Olvasások időtartama még minden ciklus esetében
-   	további 4.8uS idővel csökkenthető. 
-   	0x61-es parancs esetében ez 9.6uS/2 = 4.8uS
-   	0xE0-ás parancs esetében 19.2uS/2 = 9.6uS
+- SPI olvasás átszervezése, amely az alap olvasái adatokat a következő képpen módosította:
+Sample = MemRead(MemCim);			// 64.4uS/2 = 32.2uS
+Sample = MemReadFast(MemCim);		// 34.2uS/2 = 17.1uS
+WaveSample();						// 99.2uS/2 =  49.6uS - optimalizáltan 69uS/2 = 34.5uS
+Az olvasási ciklusokat összevontam így nincs függvényugrás ezzel felére csökkentve a szükséges olvasási időt
+Következő lehetőség még a VGM fájl kiértékelésének átszervezése,  főként az olvasásoknál. Olvasások időtartama még minden ciklus esetében
+további 4.8uS idővel csökkenthető. 
+- - 0x61-es parancs esetében ez 9.6uS/2 = 4.8uS
+- - 0xE0-ás parancs esetében 19.2uS/2 = 9.6uS
    	
 # Update - 2023-02-09.
    	SPI olvasást a minimálisra redukáltam, nincs memóriára várakozás és
