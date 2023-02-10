@@ -1,6 +1,6 @@
 # VGM Player v2.2
 * DPTP System - VGM Player 2.2 YM2612 + SN76489
-* [neo-geo.hu/VGM Player 2.2](http://neo-geo.hu/index.php?modul=news#nwtl)
+* [neo-geo.hu/VGM Player 2.2](http://neo-geo.hu/index.php?modul=news&news=44#nwe)
 * PIC18F442, PIC18F452, PIC18F46K22
 * SEGA GAME GEAR, SEGA MESTER SYSTEM, SEGA MEGA DRIVE
 * 44100Hz megzsakításban kiszolgálva, 22.7uS
