@@ -24,18 +24,18 @@ indulását követően azonnal aktív és a feltöltött zenét játszani kezdi.
 módosítani akarsz, akkor a következő sort keresd és az értéket állítsd 0-ra.
 Ekkor a zene lejátszás gombnyomásra indul.
 
-	'T2CONbits.TMR2ON = 1;'
+	`T2CONbits.TMR2ON = 1;`
 
 - A programban a PCM adatokat a PIC flashmemóriájába töltését kikapcsoltam, mert az SPI sebessége
 elegendő lenne a VGM normális lejátszásához. Ha hazsnálni akarod a PIC flash memóriáját
 akkor a main.c fájlban keresd a következő sort és állítsd át a 0x0000-át 0x4000-re,
 ekkor a PCM adatokat 16kbyte méretig feltölti a PIC flashmemóriájába.
 
-	'#define MaxPCMData		0x0000	// 16Kbyte (0x4000)'
+	`#define MaxPCMData		0x0000	// 16Kbyte (0x4000)`
 
 - A program lefordított bináris állománya a következő:
 
-	'vgm.hex'
+	`vgm.hex`
 
 A hex állomány betöthető a PIC-ben a kristály alatt kialakított programozói felületen,
 amely szabványos ICSP felület (lásd a PCB-n a felíratozást). Ajánlott programozó PicKit2
