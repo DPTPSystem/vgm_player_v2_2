@@ -14,7 +14,27 @@
 - COM? - a kérdőjel helyére a windows álltal az eszközhöz rendelt csatorna száma kerül, pl.: COM7
 - Az alkalmazás Win64 operációs rendszeren volt fejlesztve .NET 4.5-ös keretrendszerrel.
 
-# Program beállítások
+# Program instrukciók
+- A programban ki kommentelt részekkel nem kell törödni, azok tesztelés vagy egyéb
+mérések miatt kerültek bele. A programban a GOMB funkció aktív, de annak jelentősége
+az utolsó módosításoknak köszönhetően nincs. A timer2 megszakítás a program
+indulását követően azonnal aktív és a feltöltött zenét játszani kezdi. Ha ezen
+módosítani akarsz, akkor a következő sort keresd és az értéket állítsd 0-ra.
+Ekkor a zene lejátszás gombnyomásra indul.
+	T2CONbits.TMR2ON = 1;
+
+- A programban a PCM adatokat a PIC flashmemóriájába töltését kikapcsoltam, mert az SPI sebessége
+elegendő lenne a VGM normális lejátszásához. Ha hazsnálni akarod a PIC flash memóriáját
+akkor a main.c fájlban keresd a következő sort és állítsd át a 0x0000-át 0x4000-re,
+ekkor a PCM adatokat 16kbyte méretig feltölti a PIC flashmemóriájába.
+	#define MaxPCMData		0x0000	// 16Kbyte (0x4000)
+
+- A program lefordított bináris állománya a következő:
+	vgm.hex
+A hex állomány betöthető a PIC-ben a kristály alatt kialakított programozói felületen,
+amely szabványos ICSP felület (lásd a PCB-n a felíratozást). Ajánlott programozó PicKit2
+
+# Program opciónális beállításai
 * A két alábbi pontot abban az esetben kell hasznélni, ha PCB beültetésénél az LTC6903-as órajel generátort választjuk a kristályok hellyett.
 * Fontos megjegyeznem, hogy az LTC6903 csak az egyik chippet látja el órajellel, vagy vagy, ehhez ellenőrizd a PCB-t, mert fizikai átkötésre is szükség van.
 - LTC6903 init 
