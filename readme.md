@@ -188,3 +188,12 @@ eddiginél. Érintett fájlok:
 - - `void PCMJumpSave(void)`
 - interrupt.h
 - - `else if(Sample==0xE0)`
+
+# 2023.02.11. PIC18F46K22
+- Megszakítás oszcilloszkóp mérési eredménye 82.26uS/2 = 41.13uS sajnis egy olyan 
+paraccsal futtatva, amely egyik feltételbe sem ugrik be, vagy is csak azt vizsgálja 
+van e ilyen parancs. Sajnos az optimalizálással is csak 41,13uS alatt végez a 
+megszakítás, amely 22.5uS periódusra van állítva. Kivesebb ugyan mint 18F452 esetében, 
+de még így is majdnem 2 szer lassabb mint kellene. Projektet lezárom.
+* Csatoltam PIC18F46K22 PIC bináris állományát is.
+- - `vgm_player_18f46k22.hex`

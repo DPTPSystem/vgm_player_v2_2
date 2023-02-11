@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Sat Feb 11 12:48:03 2023
+Linker Map File - Created Sat Feb 11 15:26:33 2023
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -19,17 +19,17 @@ Linker Map File - Created Sat Feb 11 12:48:03 2023
       .idata_fxd1616u.o_i    romdata   0x00000e    program   0x000000
           low_vector_addr       code   0x000018    program   0x000006
                    .cinit    romdata   0x00001e    program   0x00000e
-             .code_main.o       code   0x00002c    program   0x003402
-                     PROG       code   0x00342e    program   0x0003c6
-               _cinit_scn       code   0x0037f4    program   0x00009e
-         .code_fxd3232u.o       code   0x003892    program   0x000048
-                   STRING       code   0x0038da    program   0x000034
-         .code_fxd1616u.o       code   0x00390e    program   0x00002c
-              D1KTCYXCODE       code   0x00393a    program   0x000020
-                    .code       code   0x00395a    program   0x000020
-             _startup_scn       code   0x00397a    program   0x00001c
-              D10TCYXCODE       code   0x003996    program   0x000016
-          .idata_main.o_i    romdata   0x0039ac    program   0x000023
+             .code_main.o       code   0x00002c    program   0x003406
+                     PROG       code   0x003432    program   0x0003c6
+               _cinit_scn       code   0x0037f8    program   0x00009e
+         .code_fxd3232u.o       code   0x003896    program   0x000048
+                   STRING       code   0x0038de    program   0x000034
+         .code_fxd1616u.o       code   0x003912    program   0x00002c
+              D1KTCYXCODE       code   0x00393e    program   0x000020
+                    .code       code   0x00395e    program   0x000020
+             _startup_scn       code   0x00397e    program   0x00001c
+              D10TCYXCODE       code   0x00399a    program   0x000016
+          .idata_main.o_i    romdata   0x0039b0    program   0x000023
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300002_main.o    romdata   0x300002    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
@@ -64,41 +64,41 @@ Linker Map File - Created Sat Feb 11 12:48:03 2023
                                Start         End      
                            ---------   ---------      
                             0x000000    0x00000d      
-                            0x000018    0x0039ce      
+                            0x000018    0x0039d2      
                             0x300001    0x300003      
                             0x300005    0x300006      
                             0x300008    0x30000d      
-            14800 out of 33048 program addresses used, program memory utilization is 44%
+            14804 out of 33048 program addresses used, program memory utilization is 44%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                    D10_1   0x0039a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x00399e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                    D1K_1   0x003946    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x003944    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-              Delay10TCYx   0x003996    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-              Delay1KTCYx   0x00393a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                    D10_1   0x0039aa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x0039a2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D1K_1   0x00394a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x003948    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+              Delay10TCYx   0x00399a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+              Delay1KTCYx   0x00393e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
                  Delay_Ms   0x00002c    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\header.h
                  Delay_Us   0x000060    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\header.h
-               EepromRead   0x00213a    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-              EepromWrite   0x00215e    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-                 FLO0832S   0x003432    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast08FP.asm
-                 FLO0832U   0x00342e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast08FP.asm
-                 FLO1632S   0x003454    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                 FLO1632U   0x003450    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                    FPA32   0x00347c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                    FPD32   0x0035a8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                    FPS32   0x00347a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 FXD1616U   0x00390e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                 FXD3232U   0x003892    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                 FXM1616U   0x00364e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616u.asm
+               EepromRead   0x00213e    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
+              EepromWrite   0x002162    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
+                 FLO0832S   0x003436    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast08FP.asm
+                 FLO0832U   0x003432    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast08FP.asm
+                 FLO1632S   0x003458    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                 FLO1632U   0x003454    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                    FPA32   0x003480    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPD32   0x0035ac    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    FPS32   0x00347e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 FXD1616U   0x003912    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                 FXD3232U   0x003896    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                 FXM1616U   0x003652    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616u.asm
               FastMemRead   0x0004bc    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
              FastMemWrite   0x00041e    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
             HighIntTimer0   0x0001b6    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-                  INT3216   0x00368a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  INT3216   0x00368e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
     LowInterruptIniTimer2   0x0001ce    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
                   MCUInit   0x000156    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
         MemBlockErase64Kb   0x0003c8    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
@@ -107,11 +107,11 @@ Linker Map File - Created Sat Feb 11 12:48:03 2023
               MemReadFast   0x000296    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
                  MemWrite   0x0002f2    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
                  OSC_Init   0x000212    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-                   Osztas   0x0020bc    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
+                   Osztas   0x0020c0    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
               PCMJumpSave   0x001c30    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-       PICFlashBlockErase   0x001f60    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-       PICFlashBlockWrite   0x001f9c    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-         PICFlashReadByte   0x002074    program     static C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
+       PICFlashBlockErase   0x001f64    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
+       PICFlashBlockWrite   0x001fa0    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
+         PICFlashReadByte   0x002078    program     static C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
               PSG_Silence   0x0000ba    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\ym2612.h
          SN76489_SendByte   0x000094    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\ym2612.h
                       SPI   0x0001e8    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
@@ -119,25 +119,25 @@ Linker Map File - Created Sat Feb 11 12:48:03 2023
                WaveSample   0x0005b8    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
              WaveSampleIf   0x00111e    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
               YM2612_Send   0x000102    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\ym2612.h
-              _2jContinue   0x0038fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                   _3jEnd   0x003904    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-        _D10TCYXCODE_000A   0x0039a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x0039a2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x0039a4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D1KTCYXCODE_0010   0x00394a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x003950    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                 __FpExit   0x0036f4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                 __FpPack   0x003720    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-            __FpReturnNaN   0x0036e8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-         __FpReturnNegInf   0x0036fa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnNegZero   0x003712    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-         __FpReturnPosInf   0x003700    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnPosZero   0x00371a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnSignInf   0x0036f6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-       __FpReturnSignZero   0x00370e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              __FpReturnW   0x003778    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              __FpUnPackA   0x003798    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-              __FpUnPackB   0x0037c8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+              _2jContinue   0x0038fe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x003908    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+        _D10TCYXCODE_000A   0x0039a4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x0039a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x0039a8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D1KTCYXCODE_0010   0x00394e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x003954    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                 __FpExit   0x0036f8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpPack   0x003724    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+            __FpReturnNaN   0x0036ec    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnNegInf   0x0036fe    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnNegZero   0x003716    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnPosInf   0x003704    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnPosZero   0x00371e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnSignInf   0x0036fa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+       __FpReturnSignZero   0x003712    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpReturnW   0x00377c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpUnPackA   0x00379c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+              __FpUnPackB   0x0037cc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
      ___case_102_lbl00203   0x0010ec    program     static                          
      ___case_103_lbl00110   0x000a82    program     static                          
      ___case_112_lbl00145   0x000dac    program     static                          
@@ -198,20 +198,20 @@ Linker Map File - Created Sat Feb 11 12:48:03 2023
          ___else_lbl00328   0x00132a    program     static                          
          ___else_lbl00330   0x00123e    program     static                          
          ___else_lbl00332   0x0011fa    program     static                          
-         ___else_lbl00500   0x002a28    program     static                          
-         ___else_lbl00514   0x002b6a    program     static                          
-         ___else_lbl00542   0x002cfe    program     static                          
-         ___else_lbl00544   0x002df8    program     static                          
-         ___else_lbl00546   0x002ddc    program     static                          
-         ___else_lbl00548   0x002c2a    program     static                          
-         ___else_lbl00550   0x002af4    program     static                          
-         ___else_lbl00552   0x002a6c    program     static                          
-         ___else_lbl00554   0x00273a    program     static                          
-         ___else_lbl00556   0x0026f2    program     static                          
-         ___else_lbl00558   0x0026aa    program     static                          
-         ___else_lbl00560   0x002542    program     static                          
-         ___else_lbl00562   0x002458    program     static                          
-         ___else_lbl00564   0x0023e0    program     static                          
+         ___else_lbl00500   0x002a2c    program     static                          
+         ___else_lbl00514   0x002b6e    program     static                          
+         ___else_lbl00542   0x002d02    program     static                          
+         ___else_lbl00544   0x002dfc    program     static                          
+         ___else_lbl00546   0x002de0    program     static                          
+         ___else_lbl00548   0x002c2e    program     static                          
+         ___else_lbl00550   0x002af8    program     static                          
+         ___else_lbl00552   0x002a70    program     static                          
+         ___else_lbl00554   0x00273e    program     static                          
+         ___else_lbl00556   0x0026f6    program     static                          
+         ___else_lbl00558   0x0026ae    program     static                          
+         ___else_lbl00560   0x002546    program     static                          
+         ___else_lbl00562   0x00245c    program     static                          
+         ___else_lbl00564   0x0023e4    program     static                          
           ___for_lbl00095   0x000994    program     static                          
           ___for_lbl00096   0x0009a0    program     static                          
           ___for_lbl00107   0x0008a0    program     static                          
@@ -254,33 +254,33 @@ Linker Map File - Created Sat Feb 11 12:48:03 2023
           ___for_lbl00296   0x001be6    program     static                          
           ___for_lbl00297   0x001bf2    program     static                          
           ___for_lbl00308   0x001b34    program     static                          
-          ___for_lbl00390   0x00203a    program     static                          
-          ___for_lbl00391   0x002060    program     static                          
-          ___for_lbl00392   0x002016    program     static                          
-          ___for_lbl00393   0x00201a    program     static                          
-          ___for_lbl00394   0x001fe2    program     static                          
-          ___for_lbl00397   0x001fca    program     static                          
-          ___for_lbl00469   0x002654    program     static                          
-          ___for_lbl00470   0x002660    program     static                          
-          ___for_lbl00481   0x002560    program     static                          
-          ___for_lbl00482   0x0027e0    program     static                          
-          ___for_lbl00483   0x0027ec    program     static                          
-          ___for_lbl00484   0x002764    program     static                          
-          ___for_lbl00488   0x0028bc    program     static                          
-          ___for_lbl00489   0x0028c8    program     static                          
-          ___for_lbl00490   0x00286e    program     static                          
-          ___for_lbl00492   0x002a04    program     static                          
-          ___for_lbl00493   0x002a10    program     static                          
-          ___for_lbl00494   0x0029a6    program     static                          
-          ___for_lbl00495   0x0029b2    program     static                          
-          ___for_lbl00496   0x00294c    program     static                          
-          ___for_lbl00497   0x002926    program     static                          
-          ___for_lbl00515   0x002cf0    program     static                          
-          ___for_lbl00516   0x002cfc    program     static                          
-          ___for_lbl00527   0x002c48    program     static                          
-          ___for_lbl00528   0x002dc8    program     static                          
-          ___for_lbl00529   0x002dd4    program     static                          
-          ___for_lbl00540   0x002d16    program     static                          
+          ___for_lbl00390   0x00203e    program     static                          
+          ___for_lbl00391   0x002064    program     static                          
+          ___for_lbl00392   0x00201a    program     static                          
+          ___for_lbl00393   0x00201e    program     static                          
+          ___for_lbl00394   0x001fe6    program     static                          
+          ___for_lbl00397   0x001fce    program     static                          
+          ___for_lbl00469   0x002658    program     static                          
+          ___for_lbl00470   0x002664    program     static                          
+          ___for_lbl00481   0x002564    program     static                          
+          ___for_lbl00482   0x0027e4    program     static                          
+          ___for_lbl00483   0x0027f0    program     static                          
+          ___for_lbl00484   0x002768    program     static                          
+          ___for_lbl00488   0x0028c0    program     static                          
+          ___for_lbl00489   0x0028cc    program     static                          
+          ___for_lbl00490   0x002872    program     static                          
+          ___for_lbl00492   0x002a08    program     static                          
+          ___for_lbl00493   0x002a14    program     static                          
+          ___for_lbl00494   0x0029aa    program     static                          
+          ___for_lbl00495   0x0029b6    program     static                          
+          ___for_lbl00496   0x002950    program     static                          
+          ___for_lbl00497   0x00292a    program     static                          
+          ___for_lbl00515   0x002cf4    program     static                          
+          ___for_lbl00516   0x002d00    program     static                          
+          ___for_lbl00527   0x002c4c    program     static                          
+          ___for_lbl00528   0x002dcc    program     static                          
+          ___for_lbl00529   0x002dd8    program     static                          
+          ___for_lbl00540   0x002d1a    program     static                          
            ___if_lbl00116   0x000ba8    program     static                          
            ___if_lbl00120   0x000c60    program     static                          
            ___if_lbl00127   0x000d90    program     static                          
@@ -304,39 +304,39 @@ Linker Map File - Created Sat Feb 11 12:48:03 2023
            ___if_lbl00327   0x001c1c    program     static                          
            ___if_lbl00329   0x001c1c    program     static                          
            ___if_lbl00331   0x001c1c    program     static                          
-           ___if_lbl00416   0x0022ea    program     static                          
-           ___if_lbl00487   0x002866    program     static                          
-           ___if_lbl00491   0x00291e    program     static                          
-           ___if_lbl00498   0x002a4e    program     static                          
-           ___if_lbl00499   0x002a64    program     static                          
-           ___if_lbl00513   0x002bc4    program     static                          
-           ___if_lbl00541   0x002dd4    program     static                          
-           ___if_lbl00543   0x002dfe    program     static                          
-           ___if_lbl00545   0x002dfe    program     static                          
-           ___if_lbl00547   0x002dfe    program     static                          
-           ___if_lbl00549   0x002dfe    program     static                          
-           ___if_lbl00551   0x002dfe    program     static                          
-           ___if_lbl00553   0x002dfe    program     static                          
-           ___if_lbl00555   0x002dfe    program     static                          
-           ___if_lbl00557   0x002dfe    program     static                          
-           ___if_lbl00559   0x002dfe    program     static                          
-           ___if_lbl00561   0x002dfe    program     static                          
-           ___if_lbl00563   0x002dfe    program     static                          
-           ___if_lbl00565   0x002e04    program     static                          
-           ___if_lbl00566   0x002e08    program     static                          
-       ___return_lbl00000   0x0038d8    program     static                          
-       ___return_lbl00000   0x003938    program     static                          
+           ___if_lbl00416   0x0022ee    program     static                          
+           ___if_lbl00487   0x00286a    program     static                          
+           ___if_lbl00491   0x002922    program     static                          
+           ___if_lbl00498   0x002a52    program     static                          
+           ___if_lbl00499   0x002a68    program     static                          
+           ___if_lbl00513   0x002bc8    program     static                          
+           ___if_lbl00541   0x002dd8    program     static                          
+           ___if_lbl00543   0x002e02    program     static                          
+           ___if_lbl00545   0x002e02    program     static                          
+           ___if_lbl00547   0x002e02    program     static                          
+           ___if_lbl00549   0x002e02    program     static                          
+           ___if_lbl00551   0x002e02    program     static                          
+           ___if_lbl00553   0x002e02    program     static                          
+           ___if_lbl00555   0x002e02    program     static                          
+           ___if_lbl00557   0x002e02    program     static                          
+           ___if_lbl00559   0x002e02    program     static                          
+           ___if_lbl00561   0x002e02    program     static                          
+           ___if_lbl00563   0x002e02    program     static                          
+           ___if_lbl00565   0x002e08    program     static                          
+           ___if_lbl00566   0x002e0c    program     static                          
+       ___return_lbl00000   0x0038dc    program     static                          
+       ___return_lbl00000   0x00393c    program     static                          
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00001   0x003994    program     static                          
-       ___return_lbl00002   0x003890    program     static                          
+       ___return_lbl00001   0x003998    program     static                          
+       ___return_lbl00002   0x003894    program     static                          
        ___return_lbl00058   0x00110a    program     static                          
        ___return_lbl00205   0x001c1c    program     static                          
-       ___return_lbl00386   0x001f94    program     static                          
-       ___return_lbl00389   0x002060    program     static                          
-       ___return_lbl00398   0x0020a4    program     static                          
+       ___return_lbl00386   0x001f98    program     static                          
+       ___return_lbl00389   0x002064    program     static                          
+       ___return_lbl00398   0x0020a8    program     static                          
        ___return_lbl00406   0x00000c    program     static                          
        ___return_lbl00407   0x00001c    program     static                          
-       ___return_lbl00415   0x002e08    program     static                          
+       ___return_lbl00415   0x002e0c    program     static                          
    ___switchexit_lbl00069   0x001104    program     static                          
         ___while_lbl00059   0x000604    program     static                          
         ___while_lbl00060   0x000608    program     static                          
@@ -478,100 +478,100 @@ Linker Map File - Created Sat Feb 11 12:48:03 2023
         ___while_lbl00305   0x001b90    program     static                          
         ___while_lbl00306   0x001b98    program     static                          
         ___while_lbl00307   0x001b9c    program     static                          
-        ___while_lbl00387   0x001f8a    program     static                          
-        ___while_lbl00388   0x001f8e    program     static                          
-        ___while_lbl00395   0x00202e    program     static                          
-        ___while_lbl00396   0x002032    program     static                          
-        ___while_lbl00418   0x00231c    program     static                          
-        ___while_lbl00419   0x002320    program     static                          
-        ___while_lbl00420   0x00232a    program     static                          
-        ___while_lbl00421   0x00232e    program     static                          
-        ___while_lbl00422   0x002338    program     static                          
-        ___while_lbl00423   0x00233c    program     static                          
-        ___while_lbl00424   0x002346    program     static                          
-        ___while_lbl00425   0x00234a    program     static                          
-        ___while_lbl00426   0x002352    program     static                          
-        ___while_lbl00427   0x002356    program     static                          
-        ___while_lbl00428   0x002388    program     static                          
-        ___while_lbl00429   0x00238c    program     static                          
-        ___while_lbl00430   0x002396    program     static                          
-        ___while_lbl00431   0x00239a    program     static                          
-        ___while_lbl00432   0x0023a4    program     static                          
-        ___while_lbl00433   0x0023a8    program     static                          
-        ___while_lbl00434   0x0023b2    program     static                          
-        ___while_lbl00435   0x0023b6    program     static                          
-        ___while_lbl00436   0x0023be    program     static                          
-        ___while_lbl00437   0x0023c2    program     static                          
-        ___while_lbl00438   0x002400    program     static                          
-        ___while_lbl00439   0x002404    program     static                          
-        ___while_lbl00440   0x00240e    program     static                          
-        ___while_lbl00441   0x002412    program     static                          
-        ___while_lbl00442   0x00241c    program     static                          
-        ___while_lbl00443   0x002420    program     static                          
-        ___while_lbl00444   0x00242a    program     static                          
-        ___while_lbl00445   0x00242e    program     static                          
-        ___while_lbl00446   0x002436    program     static                          
-        ___while_lbl00447   0x00243a    program     static                          
-        ___while_lbl00449   0x002480    program     static                          
-        ___while_lbl00450   0x002484    program     static                          
-        ___while_lbl00451   0x00248e    program     static                          
-        ___while_lbl00452   0x002492    program     static                          
-        ___while_lbl00453   0x00249c    program     static                          
-        ___while_lbl00454   0x0024a0    program     static                          
-        ___while_lbl00455   0x0024aa    program     static                          
-        ___while_lbl00456   0x0024ae    program     static                          
-        ___while_lbl00457   0x0024b6    program     static                          
-        ___while_lbl00458   0x0024ba    program     static                          
-        ___while_lbl00459   0x0024da    program     static                          
-        ___while_lbl00460   0x0024de    program     static                          
-        ___while_lbl00461   0x0024e8    program     static                          
-        ___while_lbl00462   0x0024ec    program     static                          
-        ___while_lbl00463   0x0024f6    program     static                          
-        ___while_lbl00464   0x0024fa    program     static                          
-        ___while_lbl00465   0x002504    program     static                          
-        ___while_lbl00466   0x002508    program     static                          
-        ___while_lbl00467   0x002510    program     static                          
-        ___while_lbl00468   0x002514    program     static                          
-        ___while_lbl00471   0x00258e    program     static                          
-        ___while_lbl00472   0x002592    program     static                          
-        ___while_lbl00473   0x00259c    program     static                          
-        ___while_lbl00474   0x0025a0    program     static                          
-        ___while_lbl00475   0x0025aa    program     static                          
-        ___while_lbl00476   0x0025ae    program     static                          
-        ___while_lbl00477   0x0025b8    program     static                          
-        ___while_lbl00478   0x0025bc    program     static                          
-        ___while_lbl00479   0x0025c4    program     static                          
-        ___while_lbl00480   0x0025c8    program     static                          
-        ___while_lbl00503   0x002b82    program     static                          
-        ___while_lbl00504   0x002b86    program     static                          
-        ___while_lbl00505   0x002b90    program     static                          
-        ___while_lbl00506   0x002b94    program     static                          
-        ___while_lbl00507   0x002b9e    program     static                          
-        ___while_lbl00508   0x002ba2    program     static                          
-        ___while_lbl00509   0x002bac    program     static                          
-        ___while_lbl00510   0x002bb0    program     static                          
-        ___while_lbl00511   0x002bb8    program     static                          
-        ___while_lbl00512   0x002bbc    program     static                          
-        ___while_lbl00517   0x002c76    program     static                          
-        ___while_lbl00518   0x002c7a    program     static                          
-        ___while_lbl00519   0x002c84    program     static                          
-        ___while_lbl00520   0x002c88    program     static                          
-        ___while_lbl00521   0x002c92    program     static                          
-        ___while_lbl00522   0x002c96    program     static                          
-        ___while_lbl00523   0x002ca0    program     static                          
-        ___while_lbl00524   0x002ca4    program     static                          
-        ___while_lbl00525   0x002cac    program     static                          
-        ___while_lbl00526   0x002cb0    program     static                          
-        ___while_lbl00530   0x002d44    program     static                          
-        ___while_lbl00531   0x002d48    program     static                          
-        ___while_lbl00532   0x002d52    program     static                          
-        ___while_lbl00533   0x002d56    program     static                          
-        ___while_lbl00534   0x002d60    program     static                          
-        ___while_lbl00535   0x002d64    program     static                          
-        ___while_lbl00536   0x002d6e    program     static                          
-        ___while_lbl00537   0x002d72    program     static                          
-        ___while_lbl00538   0x002d7a    program     static                          
-        ___while_lbl00539   0x002d7e    program     static                          
+        ___while_lbl00387   0x001f8e    program     static                          
+        ___while_lbl00388   0x001f92    program     static                          
+        ___while_lbl00395   0x002032    program     static                          
+        ___while_lbl00396   0x002036    program     static                          
+        ___while_lbl00418   0x002320    program     static                          
+        ___while_lbl00419   0x002324    program     static                          
+        ___while_lbl00420   0x00232e    program     static                          
+        ___while_lbl00421   0x002332    program     static                          
+        ___while_lbl00422   0x00233c    program     static                          
+        ___while_lbl00423   0x002340    program     static                          
+        ___while_lbl00424   0x00234a    program     static                          
+        ___while_lbl00425   0x00234e    program     static                          
+        ___while_lbl00426   0x002356    program     static                          
+        ___while_lbl00427   0x00235a    program     static                          
+        ___while_lbl00428   0x00238c    program     static                          
+        ___while_lbl00429   0x002390    program     static                          
+        ___while_lbl00430   0x00239a    program     static                          
+        ___while_lbl00431   0x00239e    program     static                          
+        ___while_lbl00432   0x0023a8    program     static                          
+        ___while_lbl00433   0x0023ac    program     static                          
+        ___while_lbl00434   0x0023b6    program     static                          
+        ___while_lbl00435   0x0023ba    program     static                          
+        ___while_lbl00436   0x0023c2    program     static                          
+        ___while_lbl00437   0x0023c6    program     static                          
+        ___while_lbl00438   0x002404    program     static                          
+        ___while_lbl00439   0x002408    program     static                          
+        ___while_lbl00440   0x002412    program     static                          
+        ___while_lbl00441   0x002416    program     static                          
+        ___while_lbl00442   0x002420    program     static                          
+        ___while_lbl00443   0x002424    program     static                          
+        ___while_lbl00444   0x00242e    program     static                          
+        ___while_lbl00445   0x002432    program     static                          
+        ___while_lbl00446   0x00243a    program     static                          
+        ___while_lbl00447   0x00243e    program     static                          
+        ___while_lbl00449   0x002484    program     static                          
+        ___while_lbl00450   0x002488    program     static                          
+        ___while_lbl00451   0x002492    program     static                          
+        ___while_lbl00452   0x002496    program     static                          
+        ___while_lbl00453   0x0024a0    program     static                          
+        ___while_lbl00454   0x0024a4    program     static                          
+        ___while_lbl00455   0x0024ae    program     static                          
+        ___while_lbl00456   0x0024b2    program     static                          
+        ___while_lbl00457   0x0024ba    program     static                          
+        ___while_lbl00458   0x0024be    program     static                          
+        ___while_lbl00459   0x0024de    program     static                          
+        ___while_lbl00460   0x0024e2    program     static                          
+        ___while_lbl00461   0x0024ec    program     static                          
+        ___while_lbl00462   0x0024f0    program     static                          
+        ___while_lbl00463   0x0024fa    program     static                          
+        ___while_lbl00464   0x0024fe    program     static                          
+        ___while_lbl00465   0x002508    program     static                          
+        ___while_lbl00466   0x00250c    program     static                          
+        ___while_lbl00467   0x002514    program     static                          
+        ___while_lbl00468   0x002518    program     static                          
+        ___while_lbl00471   0x002592    program     static                          
+        ___while_lbl00472   0x002596    program     static                          
+        ___while_lbl00473   0x0025a0    program     static                          
+        ___while_lbl00474   0x0025a4    program     static                          
+        ___while_lbl00475   0x0025ae    program     static                          
+        ___while_lbl00476   0x0025b2    program     static                          
+        ___while_lbl00477   0x0025bc    program     static                          
+        ___while_lbl00478   0x0025c0    program     static                          
+        ___while_lbl00479   0x0025c8    program     static                          
+        ___while_lbl00480   0x0025cc    program     static                          
+        ___while_lbl00503   0x002b86    program     static                          
+        ___while_lbl00504   0x002b8a    program     static                          
+        ___while_lbl00505   0x002b94    program     static                          
+        ___while_lbl00506   0x002b98    program     static                          
+        ___while_lbl00507   0x002ba2    program     static                          
+        ___while_lbl00508   0x002ba6    program     static                          
+        ___while_lbl00509   0x002bb0    program     static                          
+        ___while_lbl00510   0x002bb4    program     static                          
+        ___while_lbl00511   0x002bbc    program     static                          
+        ___while_lbl00512   0x002bc0    program     static                          
+        ___while_lbl00517   0x002c7a    program     static                          
+        ___while_lbl00518   0x002c7e    program     static                          
+        ___while_lbl00519   0x002c88    program     static                          
+        ___while_lbl00520   0x002c8c    program     static                          
+        ___while_lbl00521   0x002c96    program     static                          
+        ___while_lbl00522   0x002c9a    program     static                          
+        ___while_lbl00523   0x002ca4    program     static                          
+        ___while_lbl00524   0x002ca8    program     static                          
+        ___while_lbl00525   0x002cb0    program     static                          
+        ___while_lbl00526   0x002cb4    program     static                          
+        ___while_lbl00530   0x002d48    program     static                          
+        ___while_lbl00531   0x002d4c    program     static                          
+        ___while_lbl00532   0x002d56    program     static                          
+        ___while_lbl00533   0x002d5a    program     static                          
+        ___while_lbl00534   0x002d64    program     static                          
+        ___while_lbl00535   0x002d68    program     static                          
+        ___while_lbl00536   0x002d72    program     static                          
+        ___while_lbl00537   0x002d76    program     static                          
+        ___while_lbl00538   0x002d7e    program     static                          
+        ___while_lbl00539   0x002d82    program     static                          
                __config_0   0x300001    program     static C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\main.c
                __config_1   0x300002    program     static C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\main.c
               __config_10   0x30000d    program     static C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\main.c
@@ -588,18 +588,18 @@ Linker Map File - Created Sat Feb 11 12:48:03 2023
                __tmplbl_1   0x000b4a    program     static                          
               __tmplbl_10   0x001924    program     static                          
               __tmplbl_11   0x00191a    program     static                          
-              __tmplbl_12   0x002300    program     static                          
-              __tmplbl_13   0x0022f6    program     static                          
-              __tmplbl_14   0x002468    program     static                          
-              __tmplbl_15   0x002460    program     static                          
-              __tmplbl_16   0x002814    program     static                          
-              __tmplbl_17   0x00280c    program     static                          
-              __tmplbl_18   0x0027fc    program     static                          
-              __tmplbl_19   0x002a84    program     static                          
+              __tmplbl_12   0x002304    program     static                          
+              __tmplbl_13   0x0022fa    program     static                          
+              __tmplbl_14   0x00246c    program     static                          
+              __tmplbl_15   0x002464    program     static                          
+              __tmplbl_16   0x002818    program     static                          
+              __tmplbl_17   0x002810    program     static                          
+              __tmplbl_18   0x002800    program     static                          
+              __tmplbl_19   0x002a88    program     static                          
                __tmplbl_2   0x000b3a    program     static                          
-              __tmplbl_20   0x002a7c    program     static                          
-              __tmplbl_21   0x002b10    program     static                          
-              __tmplbl_22   0x002b06    program     static                          
+              __tmplbl_20   0x002a80    program     static                          
+              __tmplbl_21   0x002b14    program     static                          
+              __tmplbl_22   0x002b0a    program     static                          
                __tmplbl_3   0x00124e    program     static                          
                __tmplbl_4   0x001246    program     static                          
                __tmplbl_5   0x00161a    program     static                          
@@ -607,77 +607,77 @@ Linker Map File - Created Sat Feb 11 12:48:03 2023
                __tmplbl_7   0x001602    program     static                          
                __tmplbl_8   0x00188e    program     static                          
                __tmplbl_9   0x001886    program     static                          
-            __zero_memory   0x00395a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                _do_cinit   0x0037f4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+            __zero_memory   0x00395e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                _do_cinit   0x0037f8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                   _false   0x0038d4    program     static                          
-                 _startup   0x00397a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                compare_l   0x003970    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                copy_loop   0x003866    program     static                          
-            copy_one_byte   0x00386c    program     static                          
-                     done   0x003890    program     static                          
-             done_copying   0x00387a    program     static                          
-                  endloop   0x003934    program     static                          
-                   hi_isr   0x002190    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\interrupt.h
+                   _false   0x0038d8    program     static                          
+                 _startup   0x00397e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                compare_l   0x003974    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                copy_loop   0x00386a    program     static                          
+            copy_one_byte   0x003870    program     static                          
+                     done   0x003894    program     static                          
+             done_copying   0x00387e    program     static                          
+                  endloop   0x003938    program     static                          
+                   hi_isr   0x002194    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\interrupt.h
               high_vector   0x000008    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\interrupt.h
                init_usart   0x00057e    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-                 jANotInf   0x0035c6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                 jANotInf   0x0034a4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jANotNeg   0x003538    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jANotZero   0x0035da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-              jAandWsetup   0x003508    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jAltBexp   0x0034f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jBANotInf   0x00349a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jBNotInf   0x0034b2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-            jDifOrPosSign   0x0034c6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                     jEnd   0x00390c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                    jExit   0x0036e6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-               jFinalSign   0x0035a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jI2F08Beg   0x00343c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast08FP.asm
-                jI2F16Beg   0x003464    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                    jLoop   0x003602    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                    jLoop   0x0036c6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jLoop   0x0038ee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                jLoopExit   0x0036d6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                     jMax   0x00369a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jMaxNeg   0x0036a8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jMaxPos   0x00369e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jNext   0x003628    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                jNoAdjust   0x003626    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-             jNotBothZero   0x0034ca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                  jNotInf   0x0036b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jPkLoop   0x00372e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-             jPkRoundDone   0x003778    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-               jPkRoundIt   0x003760    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-             jPkShiftDone   0x00374a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-           jReturnPosInf0   0x003704    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-               jShiftDone   0x003560    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-               jShiftLoop   0x003552    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jSignDone   0x003590    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-              jSignedZero   0x0035d0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                  jUnpkA1   0x0037a2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkA2   0x0037ba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkANZ   0x0037b0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkB1   0x0037d2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkB2   0x0037ea    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkBNZ   0x0037e0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkNaN   0x0037c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jWNotNeg   0x00354c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                    jZero   0x0036b0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-               jZero1and2   0x003708    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                   lo_isr   0x002236    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\interrupt.h
-                     loop   0x00398a    program     static                          
-                     loop   0x0038a0    program     static                          
-                     loop   0x003918    program     static                          
-                   loop_h   0x003968    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                   loop_l   0x003972    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 jANotInf   0x0035ca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                 jANotInf   0x0034a8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotNeg   0x00353c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jANotZero   0x0035de    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+              jAandWsetup   0x00350c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jAltBexp   0x0034fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jBANotInf   0x00349e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jBNotInf   0x0034b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+            jDifOrPosSign   0x0034ca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                     jEnd   0x003910    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                    jExit   0x0036ea    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+               jFinalSign   0x0035a4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jI2F08Beg   0x003440    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast08FP.asm
+                jI2F16Beg   0x003468    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                    jLoop   0x003606    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    jLoop   0x0036ca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jLoop   0x0038f2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                jLoopExit   0x0036da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                     jMax   0x00369e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxNeg   0x0036ac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxPos   0x0036a2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jNext   0x00362c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jNoAdjust   0x00362a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+             jNotBothZero   0x0034ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                  jNotInf   0x0036ba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jPkLoop   0x003732    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkRoundDone   0x00377c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jPkRoundIt   0x003764    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkShiftDone   0x00374e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+           jReturnPosInf0   0x003708    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jShiftDone   0x003564    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftLoop   0x003556    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jSignDone   0x003594    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jSignedZero   0x0035d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                  jUnpkA1   0x0037a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA2   0x0037be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkANZ   0x0037b4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB1   0x0037d6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB2   0x0037ee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkBNZ   0x0037e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkNaN   0x0037c8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jWNotNeg   0x003550    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    jZero   0x0036b4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+               jZero1and2   0x00370c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                   lo_isr   0x00223a    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\interrupt.h
+                     loop   0x00398e    program     static                          
+                     loop   0x0038a4    program     static                          
+                     loop   0x00391c    program     static                          
+                   loop_h   0x00396c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_l   0x003976    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                low_vector   0x000018    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\interrupt.h
-                     main   0x002e70    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\main.c
-                   memset   0x0038da    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                     main   0x002e74    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\main.c
+                   memset   0x0038de    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
                 read_uart   0x0005ac    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-                     test   0x00380e    program     static                          
+                     test   0x003812    program     static                          
                write_uart   0x000592    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-               zero_block   0x003968    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               zero_block   0x00396c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
@@ -1218,287 +1218,287 @@ Linker Map File - Created Sat Feb 11 12:48:03 2023
            ___if_lbl00329   0x001c1c    program     static                          
            ___if_lbl00331   0x001c1c    program     static                          
               PCMJumpSave   0x001c30    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-       PICFlashBlockErase   0x001f60    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-        ___while_lbl00387   0x001f8a    program     static                          
-        ___while_lbl00388   0x001f8e    program     static                          
-       ___return_lbl00386   0x001f94    program     static                          
-       PICFlashBlockWrite   0x001f9c    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-          ___for_lbl00397   0x001fca    program     static                          
-          ___for_lbl00394   0x001fe2    program     static                          
-          ___for_lbl00392   0x002016    program     static                          
-          ___for_lbl00393   0x00201a    program     static                          
-        ___while_lbl00395   0x00202e    program     static                          
-        ___while_lbl00396   0x002032    program     static                          
-          ___for_lbl00390   0x00203a    program     static                          
-       ___return_lbl00389   0x002060    program     static                          
-          ___for_lbl00391   0x002060    program     static                          
-         PICFlashReadByte   0x002074    program     static C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-       ___return_lbl00398   0x0020a4    program     static                          
-                   Osztas   0x0020bc    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-               EepromRead   0x00213a    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-              EepromWrite   0x00215e    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
-                   hi_isr   0x002190    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\interrupt.h
-                   lo_isr   0x002236    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\interrupt.h
-           ___if_lbl00416   0x0022ea    program     static                          
-              __tmplbl_13   0x0022f6    program     static                          
-              __tmplbl_12   0x002300    program     static                          
-        ___while_lbl00418   0x00231c    program     static                          
-        ___while_lbl00419   0x002320    program     static                          
-        ___while_lbl00420   0x00232a    program     static                          
-        ___while_lbl00421   0x00232e    program     static                          
-        ___while_lbl00422   0x002338    program     static                          
-        ___while_lbl00423   0x00233c    program     static                          
-        ___while_lbl00424   0x002346    program     static                          
-        ___while_lbl00425   0x00234a    program     static                          
-        ___while_lbl00426   0x002352    program     static                          
-        ___while_lbl00427   0x002356    program     static                          
-        ___while_lbl00428   0x002388    program     static                          
-        ___while_lbl00429   0x00238c    program     static                          
-        ___while_lbl00430   0x002396    program     static                          
-        ___while_lbl00431   0x00239a    program     static                          
-        ___while_lbl00432   0x0023a4    program     static                          
-        ___while_lbl00433   0x0023a8    program     static                          
-        ___while_lbl00434   0x0023b2    program     static                          
-        ___while_lbl00435   0x0023b6    program     static                          
-        ___while_lbl00436   0x0023be    program     static                          
-        ___while_lbl00437   0x0023c2    program     static                          
-         ___else_lbl00564   0x0023e0    program     static                          
-        ___while_lbl00438   0x002400    program     static                          
-        ___while_lbl00439   0x002404    program     static                          
-        ___while_lbl00440   0x00240e    program     static                          
-        ___while_lbl00441   0x002412    program     static                          
-        ___while_lbl00442   0x00241c    program     static                          
-        ___while_lbl00443   0x002420    program     static                          
-        ___while_lbl00444   0x00242a    program     static                          
-        ___while_lbl00445   0x00242e    program     static                          
-        ___while_lbl00446   0x002436    program     static                          
-        ___while_lbl00447   0x00243a    program     static                          
-         ___else_lbl00562   0x002458    program     static                          
-              __tmplbl_15   0x002460    program     static                          
-              __tmplbl_14   0x002468    program     static                          
-        ___while_lbl00449   0x002480    program     static                          
-        ___while_lbl00450   0x002484    program     static                          
-        ___while_lbl00451   0x00248e    program     static                          
-        ___while_lbl00452   0x002492    program     static                          
-        ___while_lbl00453   0x00249c    program     static                          
-        ___while_lbl00454   0x0024a0    program     static                          
-        ___while_lbl00455   0x0024aa    program     static                          
-        ___while_lbl00456   0x0024ae    program     static                          
-        ___while_lbl00457   0x0024b6    program     static                          
-        ___while_lbl00458   0x0024ba    program     static                          
-        ___while_lbl00459   0x0024da    program     static                          
-        ___while_lbl00460   0x0024de    program     static                          
-        ___while_lbl00461   0x0024e8    program     static                          
-        ___while_lbl00462   0x0024ec    program     static                          
-        ___while_lbl00463   0x0024f6    program     static                          
-        ___while_lbl00464   0x0024fa    program     static                          
-        ___while_lbl00465   0x002504    program     static                          
-        ___while_lbl00466   0x002508    program     static                          
-        ___while_lbl00467   0x002510    program     static                          
-        ___while_lbl00468   0x002514    program     static                          
-         ___else_lbl00560   0x002542    program     static                          
-          ___for_lbl00481   0x002560    program     static                          
-        ___while_lbl00471   0x00258e    program     static                          
-        ___while_lbl00472   0x002592    program     static                          
-        ___while_lbl00473   0x00259c    program     static                          
-        ___while_lbl00474   0x0025a0    program     static                          
-        ___while_lbl00475   0x0025aa    program     static                          
-        ___while_lbl00476   0x0025ae    program     static                          
-        ___while_lbl00477   0x0025b8    program     static                          
-        ___while_lbl00478   0x0025bc    program     static                          
-        ___while_lbl00479   0x0025c4    program     static                          
-        ___while_lbl00480   0x0025c8    program     static                          
-          ___for_lbl00469   0x002654    program     static                          
-          ___for_lbl00470   0x002660    program     static                          
-         ___else_lbl00558   0x0026aa    program     static                          
-         ___else_lbl00556   0x0026f2    program     static                          
-         ___else_lbl00554   0x00273a    program     static                          
-          ___for_lbl00484   0x002764    program     static                          
-          ___for_lbl00482   0x0027e0    program     static                          
-          ___for_lbl00483   0x0027ec    program     static                          
-              __tmplbl_18   0x0027fc    program     static                          
-              __tmplbl_17   0x00280c    program     static                          
-              __tmplbl_16   0x002814    program     static                          
-           ___if_lbl00487   0x002866    program     static                          
-          ___for_lbl00490   0x00286e    program     static                          
-          ___for_lbl00488   0x0028bc    program     static                          
-          ___for_lbl00489   0x0028c8    program     static                          
-           ___if_lbl00491   0x00291e    program     static                          
-          ___for_lbl00497   0x002926    program     static                          
-          ___for_lbl00496   0x00294c    program     static                          
-          ___for_lbl00494   0x0029a6    program     static                          
-          ___for_lbl00495   0x0029b2    program     static                          
-          ___for_lbl00492   0x002a04    program     static                          
-          ___for_lbl00493   0x002a10    program     static                          
-         ___else_lbl00500   0x002a28    program     static                          
-           ___if_lbl00498   0x002a4e    program     static                          
-           ___if_lbl00499   0x002a64    program     static                          
-         ___else_lbl00552   0x002a6c    program     static                          
-              __tmplbl_20   0x002a7c    program     static                          
-              __tmplbl_19   0x002a84    program     static                          
-         ___else_lbl00550   0x002af4    program     static                          
-              __tmplbl_22   0x002b06    program     static                          
-              __tmplbl_21   0x002b10    program     static                          
-         ___else_lbl00514   0x002b6a    program     static                          
-        ___while_lbl00503   0x002b82    program     static                          
-        ___while_lbl00504   0x002b86    program     static                          
-        ___while_lbl00505   0x002b90    program     static                          
-        ___while_lbl00506   0x002b94    program     static                          
-        ___while_lbl00507   0x002b9e    program     static                          
-        ___while_lbl00508   0x002ba2    program     static                          
-        ___while_lbl00509   0x002bac    program     static                          
-        ___while_lbl00510   0x002bb0    program     static                          
-        ___while_lbl00511   0x002bb8    program     static                          
-        ___while_lbl00512   0x002bbc    program     static                          
-           ___if_lbl00513   0x002bc4    program     static                          
-         ___else_lbl00548   0x002c2a    program     static                          
-          ___for_lbl00527   0x002c48    program     static                          
-        ___while_lbl00517   0x002c76    program     static                          
-        ___while_lbl00518   0x002c7a    program     static                          
-        ___while_lbl00519   0x002c84    program     static                          
-        ___while_lbl00520   0x002c88    program     static                          
-        ___while_lbl00521   0x002c92    program     static                          
-        ___while_lbl00522   0x002c96    program     static                          
-        ___while_lbl00523   0x002ca0    program     static                          
-        ___while_lbl00524   0x002ca4    program     static                          
-        ___while_lbl00525   0x002cac    program     static                          
-        ___while_lbl00526   0x002cb0    program     static                          
-          ___for_lbl00515   0x002cf0    program     static                          
-          ___for_lbl00516   0x002cfc    program     static                          
-         ___else_lbl00542   0x002cfe    program     static                          
-          ___for_lbl00540   0x002d16    program     static                          
-        ___while_lbl00530   0x002d44    program     static                          
-        ___while_lbl00531   0x002d48    program     static                          
-        ___while_lbl00532   0x002d52    program     static                          
-        ___while_lbl00533   0x002d56    program     static                          
-        ___while_lbl00534   0x002d60    program     static                          
-        ___while_lbl00535   0x002d64    program     static                          
-        ___while_lbl00536   0x002d6e    program     static                          
-        ___while_lbl00537   0x002d72    program     static                          
-        ___while_lbl00538   0x002d7a    program     static                          
-        ___while_lbl00539   0x002d7e    program     static                          
-          ___for_lbl00528   0x002dc8    program     static                          
-          ___for_lbl00529   0x002dd4    program     static                          
-           ___if_lbl00541   0x002dd4    program     static                          
-         ___else_lbl00546   0x002ddc    program     static                          
-         ___else_lbl00544   0x002df8    program     static                          
-           ___if_lbl00543   0x002dfe    program     static                          
-           ___if_lbl00545   0x002dfe    program     static                          
-           ___if_lbl00547   0x002dfe    program     static                          
-           ___if_lbl00549   0x002dfe    program     static                          
-           ___if_lbl00551   0x002dfe    program     static                          
-           ___if_lbl00553   0x002dfe    program     static                          
-           ___if_lbl00555   0x002dfe    program     static                          
-           ___if_lbl00557   0x002dfe    program     static                          
-           ___if_lbl00559   0x002dfe    program     static                          
-           ___if_lbl00561   0x002dfe    program     static                          
-           ___if_lbl00563   0x002dfe    program     static                          
-           ___if_lbl00565   0x002e04    program     static                          
-           ___if_lbl00566   0x002e08    program     static                          
-       ___return_lbl00415   0x002e08    program     static                          
-                     main   0x002e70    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\main.c
-                 FLO0832U   0x00342e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast08FP.asm
-                 FLO0832S   0x003432    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast08FP.asm
-                jI2F08Beg   0x00343c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast08FP.asm
-                 FLO1632U   0x003450    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                 FLO1632S   0x003454    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                jI2F16Beg   0x003464    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                    FPS32   0x00347a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                    FPA32   0x00347c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jBANotInf   0x00349a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jANotInf   0x0034a4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jBNotInf   0x0034b2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-            jDifOrPosSign   0x0034c6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-             jNotBothZero   0x0034ca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jAltBexp   0x0034f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-              jAandWsetup   0x003508    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jANotNeg   0x003538    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jWNotNeg   0x00354c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-               jShiftLoop   0x003552    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-               jShiftDone   0x003560    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jSignDone   0x003590    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-               jFinalSign   0x0035a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                    FPD32   0x0035a8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                 jANotInf   0x0035c6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-              jSignedZero   0x0035d0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                jANotZero   0x0035da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                    jLoop   0x003602    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                jNoAdjust   0x003626    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                    jNext   0x003628    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                 FXM1616U   0x00364e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616u.asm
-                  INT3216   0x00368a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                     jMax   0x00369a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jMaxPos   0x00369e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jMaxNeg   0x0036a8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jZero   0x0036b0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jNotInf   0x0036b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jLoop   0x0036c6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                jLoopExit   0x0036d6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jExit   0x0036e6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-            __FpReturnNaN   0x0036e8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                 __FpExit   0x0036f4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnSignInf   0x0036f6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-         __FpReturnNegInf   0x0036fa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-         __FpReturnPosInf   0x003700    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-           jReturnPosInf0   0x003704    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-               jZero1and2   0x003708    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-       __FpReturnSignZero   0x00370e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnNegZero   0x003712    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnPosZero   0x00371a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                 __FpPack   0x003720    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                  jPkLoop   0x00372e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-             jPkShiftDone   0x00374a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-               jPkRoundIt   0x003760    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              __FpReturnW   0x003778    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-             jPkRoundDone   0x003778    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              __FpUnPackA   0x003798    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkA1   0x0037a2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkANZ   0x0037b0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkA2   0x0037ba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkNaN   0x0037c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-              __FpUnPackB   0x0037c8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkB1   0x0037d2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkBNZ   0x0037e0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkB2   0x0037ea    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                _do_cinit   0x0037f4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x00380e    program     static                          
-                copy_loop   0x003866    program     static                          
-            copy_one_byte   0x00386c    program     static                          
-             done_copying   0x00387a    program     static                          
-                     done   0x003890    program     static                          
-       ___return_lbl00002   0x003890    program     static                          
-                 FXD3232U   0x003892    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                     loop   0x0038a0    program     static                          
-                   _false   0x0038d4    program     static                          
-       ___return_lbl00000   0x0038d8    program     static                          
-                   memset   0x0038da    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                    jLoop   0x0038ee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-              _2jContinue   0x0038fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                   _3jEnd   0x003904    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                     jEnd   0x00390c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                 FXD1616U   0x00390e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                     loop   0x003918    program     static                          
-                  endloop   0x003934    program     static                          
-       ___return_lbl00000   0x003938    program     static                          
-              Delay1KTCYx   0x00393a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x003944    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                    D1K_1   0x003946    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0010   0x00394a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x003950    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-            __zero_memory   0x00395a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                   loop_h   0x003968    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-               zero_block   0x003968    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                compare_l   0x003970    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                   loop_l   0x003972    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                 _startup   0x00397a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x00398a    program     static                          
-       ___return_lbl00001   0x003994    program     static                          
-              Delay10TCYx   0x003996    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x00399e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000A   0x0039a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x0039a2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x0039a4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                    D10_1   0x0039a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+       PICFlashBlockErase   0x001f64    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
+        ___while_lbl00387   0x001f8e    program     static                          
+        ___while_lbl00388   0x001f92    program     static                          
+       ___return_lbl00386   0x001f98    program     static                          
+       PICFlashBlockWrite   0x001fa0    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
+          ___for_lbl00397   0x001fce    program     static                          
+          ___for_lbl00394   0x001fe6    program     static                          
+          ___for_lbl00392   0x00201a    program     static                          
+          ___for_lbl00393   0x00201e    program     static                          
+        ___while_lbl00395   0x002032    program     static                          
+        ___while_lbl00396   0x002036    program     static                          
+          ___for_lbl00390   0x00203e    program     static                          
+       ___return_lbl00389   0x002064    program     static                          
+          ___for_lbl00391   0x002064    program     static                          
+         PICFlashReadByte   0x002078    program     static C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
+       ___return_lbl00398   0x0020a8    program     static                          
+                   Osztas   0x0020c0    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
+               EepromRead   0x00213e    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
+              EepromWrite   0x002162    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\function.h
+                   hi_isr   0x002194    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\interrupt.h
+                   lo_isr   0x00223a    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\interrupt.h
+           ___if_lbl00416   0x0022ee    program     static                          
+              __tmplbl_13   0x0022fa    program     static                          
+              __tmplbl_12   0x002304    program     static                          
+        ___while_lbl00418   0x002320    program     static                          
+        ___while_lbl00419   0x002324    program     static                          
+        ___while_lbl00420   0x00232e    program     static                          
+        ___while_lbl00421   0x002332    program     static                          
+        ___while_lbl00422   0x00233c    program     static                          
+        ___while_lbl00423   0x002340    program     static                          
+        ___while_lbl00424   0x00234a    program     static                          
+        ___while_lbl00425   0x00234e    program     static                          
+        ___while_lbl00426   0x002356    program     static                          
+        ___while_lbl00427   0x00235a    program     static                          
+        ___while_lbl00428   0x00238c    program     static                          
+        ___while_lbl00429   0x002390    program     static                          
+        ___while_lbl00430   0x00239a    program     static                          
+        ___while_lbl00431   0x00239e    program     static                          
+        ___while_lbl00432   0x0023a8    program     static                          
+        ___while_lbl00433   0x0023ac    program     static                          
+        ___while_lbl00434   0x0023b6    program     static                          
+        ___while_lbl00435   0x0023ba    program     static                          
+        ___while_lbl00436   0x0023c2    program     static                          
+        ___while_lbl00437   0x0023c6    program     static                          
+         ___else_lbl00564   0x0023e4    program     static                          
+        ___while_lbl00438   0x002404    program     static                          
+        ___while_lbl00439   0x002408    program     static                          
+        ___while_lbl00440   0x002412    program     static                          
+        ___while_lbl00441   0x002416    program     static                          
+        ___while_lbl00442   0x002420    program     static                          
+        ___while_lbl00443   0x002424    program     static                          
+        ___while_lbl00444   0x00242e    program     static                          
+        ___while_lbl00445   0x002432    program     static                          
+        ___while_lbl00446   0x00243a    program     static                          
+        ___while_lbl00447   0x00243e    program     static                          
+         ___else_lbl00562   0x00245c    program     static                          
+              __tmplbl_15   0x002464    program     static                          
+              __tmplbl_14   0x00246c    program     static                          
+        ___while_lbl00449   0x002484    program     static                          
+        ___while_lbl00450   0x002488    program     static                          
+        ___while_lbl00451   0x002492    program     static                          
+        ___while_lbl00452   0x002496    program     static                          
+        ___while_lbl00453   0x0024a0    program     static                          
+        ___while_lbl00454   0x0024a4    program     static                          
+        ___while_lbl00455   0x0024ae    program     static                          
+        ___while_lbl00456   0x0024b2    program     static                          
+        ___while_lbl00457   0x0024ba    program     static                          
+        ___while_lbl00458   0x0024be    program     static                          
+        ___while_lbl00459   0x0024de    program     static                          
+        ___while_lbl00460   0x0024e2    program     static                          
+        ___while_lbl00461   0x0024ec    program     static                          
+        ___while_lbl00462   0x0024f0    program     static                          
+        ___while_lbl00463   0x0024fa    program     static                          
+        ___while_lbl00464   0x0024fe    program     static                          
+        ___while_lbl00465   0x002508    program     static                          
+        ___while_lbl00466   0x00250c    program     static                          
+        ___while_lbl00467   0x002514    program     static                          
+        ___while_lbl00468   0x002518    program     static                          
+         ___else_lbl00560   0x002546    program     static                          
+          ___for_lbl00481   0x002564    program     static                          
+        ___while_lbl00471   0x002592    program     static                          
+        ___while_lbl00472   0x002596    program     static                          
+        ___while_lbl00473   0x0025a0    program     static                          
+        ___while_lbl00474   0x0025a4    program     static                          
+        ___while_lbl00475   0x0025ae    program     static                          
+        ___while_lbl00476   0x0025b2    program     static                          
+        ___while_lbl00477   0x0025bc    program     static                          
+        ___while_lbl00478   0x0025c0    program     static                          
+        ___while_lbl00479   0x0025c8    program     static                          
+        ___while_lbl00480   0x0025cc    program     static                          
+          ___for_lbl00469   0x002658    program     static                          
+          ___for_lbl00470   0x002664    program     static                          
+         ___else_lbl00558   0x0026ae    program     static                          
+         ___else_lbl00556   0x0026f6    program     static                          
+         ___else_lbl00554   0x00273e    program     static                          
+          ___for_lbl00484   0x002768    program     static                          
+          ___for_lbl00482   0x0027e4    program     static                          
+          ___for_lbl00483   0x0027f0    program     static                          
+              __tmplbl_18   0x002800    program     static                          
+              __tmplbl_17   0x002810    program     static                          
+              __tmplbl_16   0x002818    program     static                          
+           ___if_lbl00487   0x00286a    program     static                          
+          ___for_lbl00490   0x002872    program     static                          
+          ___for_lbl00488   0x0028c0    program     static                          
+          ___for_lbl00489   0x0028cc    program     static                          
+           ___if_lbl00491   0x002922    program     static                          
+          ___for_lbl00497   0x00292a    program     static                          
+          ___for_lbl00496   0x002950    program     static                          
+          ___for_lbl00494   0x0029aa    program     static                          
+          ___for_lbl00495   0x0029b6    program     static                          
+          ___for_lbl00492   0x002a08    program     static                          
+          ___for_lbl00493   0x002a14    program     static                          
+         ___else_lbl00500   0x002a2c    program     static                          
+           ___if_lbl00498   0x002a52    program     static                          
+           ___if_lbl00499   0x002a68    program     static                          
+         ___else_lbl00552   0x002a70    program     static                          
+              __tmplbl_20   0x002a80    program     static                          
+              __tmplbl_19   0x002a88    program     static                          
+         ___else_lbl00550   0x002af8    program     static                          
+              __tmplbl_22   0x002b0a    program     static                          
+              __tmplbl_21   0x002b14    program     static                          
+         ___else_lbl00514   0x002b6e    program     static                          
+        ___while_lbl00503   0x002b86    program     static                          
+        ___while_lbl00504   0x002b8a    program     static                          
+        ___while_lbl00505   0x002b94    program     static                          
+        ___while_lbl00506   0x002b98    program     static                          
+        ___while_lbl00507   0x002ba2    program     static                          
+        ___while_lbl00508   0x002ba6    program     static                          
+        ___while_lbl00509   0x002bb0    program     static                          
+        ___while_lbl00510   0x002bb4    program     static                          
+        ___while_lbl00511   0x002bbc    program     static                          
+        ___while_lbl00512   0x002bc0    program     static                          
+           ___if_lbl00513   0x002bc8    program     static                          
+         ___else_lbl00548   0x002c2e    program     static                          
+          ___for_lbl00527   0x002c4c    program     static                          
+        ___while_lbl00517   0x002c7a    program     static                          
+        ___while_lbl00518   0x002c7e    program     static                          
+        ___while_lbl00519   0x002c88    program     static                          
+        ___while_lbl00520   0x002c8c    program     static                          
+        ___while_lbl00521   0x002c96    program     static                          
+        ___while_lbl00522   0x002c9a    program     static                          
+        ___while_lbl00523   0x002ca4    program     static                          
+        ___while_lbl00524   0x002ca8    program     static                          
+        ___while_lbl00525   0x002cb0    program     static                          
+        ___while_lbl00526   0x002cb4    program     static                          
+          ___for_lbl00515   0x002cf4    program     static                          
+          ___for_lbl00516   0x002d00    program     static                          
+         ___else_lbl00542   0x002d02    program     static                          
+          ___for_lbl00540   0x002d1a    program     static                          
+        ___while_lbl00530   0x002d48    program     static                          
+        ___while_lbl00531   0x002d4c    program     static                          
+        ___while_lbl00532   0x002d56    program     static                          
+        ___while_lbl00533   0x002d5a    program     static                          
+        ___while_lbl00534   0x002d64    program     static                          
+        ___while_lbl00535   0x002d68    program     static                          
+        ___while_lbl00536   0x002d72    program     static                          
+        ___while_lbl00537   0x002d76    program     static                          
+        ___while_lbl00538   0x002d7e    program     static                          
+        ___while_lbl00539   0x002d82    program     static                          
+          ___for_lbl00528   0x002dcc    program     static                          
+          ___for_lbl00529   0x002dd8    program     static                          
+           ___if_lbl00541   0x002dd8    program     static                          
+         ___else_lbl00546   0x002de0    program     static                          
+         ___else_lbl00544   0x002dfc    program     static                          
+           ___if_lbl00543   0x002e02    program     static                          
+           ___if_lbl00545   0x002e02    program     static                          
+           ___if_lbl00547   0x002e02    program     static                          
+           ___if_lbl00549   0x002e02    program     static                          
+           ___if_lbl00551   0x002e02    program     static                          
+           ___if_lbl00553   0x002e02    program     static                          
+           ___if_lbl00555   0x002e02    program     static                          
+           ___if_lbl00557   0x002e02    program     static                          
+           ___if_lbl00559   0x002e02    program     static                          
+           ___if_lbl00561   0x002e02    program     static                          
+           ___if_lbl00563   0x002e02    program     static                          
+           ___if_lbl00565   0x002e08    program     static                          
+           ___if_lbl00566   0x002e0c    program     static                          
+       ___return_lbl00415   0x002e0c    program     static                          
+                     main   0x002e74    program     extern C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\main.c
+                 FLO0832U   0x003432    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast08FP.asm
+                 FLO0832S   0x003436    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast08FP.asm
+                jI2F08Beg   0x003440    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast08FP.asm
+                 FLO1632U   0x003454    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                 FLO1632S   0x003458    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                jI2F16Beg   0x003468    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                    FPS32   0x00347e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPA32   0x003480    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jBANotInf   0x00349e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotInf   0x0034a8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jBNotInf   0x0034b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+            jDifOrPosSign   0x0034ca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+             jNotBothZero   0x0034ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jAltBexp   0x0034fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jAandWsetup   0x00350c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotNeg   0x00353c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jWNotNeg   0x003550    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftLoop   0x003556    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftDone   0x003564    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jSignDone   0x003594    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jFinalSign   0x0035a4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPD32   0x0035ac    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                 jANotInf   0x0035ca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+              jSignedZero   0x0035d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jANotZero   0x0035de    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    jLoop   0x003606    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jNoAdjust   0x00362a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    jNext   0x00362c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                 FXM1616U   0x003652    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616u.asm
+                  INT3216   0x00368e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                     jMax   0x00369e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxPos   0x0036a2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxNeg   0x0036ac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jZero   0x0036b4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jNotInf   0x0036ba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jLoop   0x0036ca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                jLoopExit   0x0036da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jExit   0x0036ea    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+            __FpReturnNaN   0x0036ec    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpExit   0x0036f8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnSignInf   0x0036fa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnNegInf   0x0036fe    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnPosInf   0x003704    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+           jReturnPosInf0   0x003708    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jZero1and2   0x00370c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+       __FpReturnSignZero   0x003712    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnNegZero   0x003716    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnPosZero   0x00371e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpPack   0x003724    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                  jPkLoop   0x003732    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkShiftDone   0x00374e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jPkRoundIt   0x003764    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpReturnW   0x00377c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkRoundDone   0x00377c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpUnPackA   0x00379c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA1   0x0037a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkANZ   0x0037b4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA2   0x0037be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkNaN   0x0037c8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+              __FpUnPackB   0x0037cc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB1   0x0037d6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkBNZ   0x0037e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB2   0x0037ee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                _do_cinit   0x0037f8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x003812    program     static                          
+                copy_loop   0x00386a    program     static                          
+            copy_one_byte   0x003870    program     static                          
+             done_copying   0x00387e    program     static                          
+                     done   0x003894    program     static                          
+       ___return_lbl00002   0x003894    program     static                          
+                 FXD3232U   0x003896    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                     loop   0x0038a4    program     static                          
+                   _false   0x0038d8    program     static                          
+       ___return_lbl00000   0x0038dc    program     static                          
+                   memset   0x0038de    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                    jLoop   0x0038f2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+              _2jContinue   0x0038fe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x003908    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                     jEnd   0x003910    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                 FXD1616U   0x003912    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                     loop   0x00391c    program     static                          
+                  endloop   0x003938    program     static                          
+       ___return_lbl00000   0x00393c    program     static                          
+              Delay1KTCYx   0x00393e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x003948    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x00394a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0010   0x00394e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x003954    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+            __zero_memory   0x00395e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_h   0x00396c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               zero_block   0x00396c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                compare_l   0x003974    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_l   0x003976    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 _startup   0x00397e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x00398e    program     static                          
+       ___return_lbl00001   0x003998    program     static                          
+              Delay10TCYx   0x00399a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x0039a2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x0039a4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x0039a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x0039a8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x0039aa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
                __config_0   0x300001    program     static C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\main.c
                __config_1   0x300002    program     static C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\main.c
                __config_2   0x300003    program     static C:\Users\DPTP\Google Drive\DPTP\PIC_Programozas\P18F452\VGM_YM2612_SN76489\main.c

@@ -1177,6 +1177,7 @@ void PCMJumpSave(void)
 				break;
 			case 0x66:
 				MemCim.value=63;
+				PCMDataSize=0;
 				BuffIndex=0;
 				Flag = 0;
 				break;
