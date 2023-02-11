@@ -182,7 +182,7 @@ elegendő memóriával ahhoz, hogy nagy méretá tömböt hozzunk létre, de kis
 PCM adatot tartalmazó zenénél a tesztelés nem hozott jobb eredményt az 
 eddiginél.
 Programon belül érintett az interupt.h, módosítások:
-`MemCim.value+=4; 
+`MemCim.value+=4; \n\r
 if(PCMLoad)
 {
 	BuffIndex = JumpTableE0[PCMJumpIndex++];
