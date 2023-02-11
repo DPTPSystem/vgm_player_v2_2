@@ -751,6 +751,16 @@ void lo_isr (void) {
 			}	
 			else if(Sample==0xE0)
 			{
+				/*MemCim.value+=4;
+				if(PCMLoad)
+				{
+					BuffIndex = JumpTableE0[PCMJumpIndex++];
+				}
+				else
+				{
+					PCMMemAdr.value = pcmBufferPositionStart;
+					PCMMemAdr.value += JumpTableE0[PCMJumpIndex++];
+				}*/
 				if(PCMLoad)
 				{
 					BuffIndex = 0;

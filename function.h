@@ -5,6 +5,7 @@ void LowInterruptIniTimer2(void);
 unsigned char SPI(unsigned char adat);
 volatile unsigned int WaveSample(void);
 volatile unsigned int WaveSampleIf(void);
+void PCMJumpSave(void);
 
 // 25LC640 Memória
 void WaitForMem(void);									//Várakozás a SPI memóriára
@@ -1091,6 +1092,100 @@ volatile unsigned int WaveSampleIf(void)
 		return 0;
 	}
 }
+void PCMJumpSave(void)
+{
+	unsigned char Sample = 0;
+	unsigned int i = 0, x = 0;
+	unsigned char Flag = 1;
+	
+	while(Flag)
+	{
+		MemCim.value++;
+		Sample = MemReadFast(MemCim);
+		switch(Sample) //VGM commands
+		{
+			case 0x4F:
+				MemCim.value++;
+				break;
+			case 0x50:
+				MemCim.value++;
+				break;
+			case 0x52:
+			case 0x53:
+				MemCim.value++;
+				MemCim.value++;
+				break;
+			case 0x61:
+				MemCim.value++;
+				MemCim.value++;
+				break;
+			case 0x62:
+			case 0x63:
+				break;
+			case 0x67:
+				// PCM adat kezelése
+				MemCim.value++;	// Skip 0x66
+				MemCim.value++; // Skip data type
+				for ( i = 0; i < 4; i++ )
+				{
+					MemCim.value++;
+					PCMDataSize += ( (unsigned long)(MemReadFast(MemCim)) << ( 8 * i ));
+				}
+				MemCim.value+=PCMDataSize;
+				break;
+			case 0x70:
+			case 0x71:
+			case 0x72:
+			case 0x73:
+			case 0x74:
+			case 0x75:
+			case 0x76:
+			case 0x77:
+			case 0x78:
+			case 0x79:
+			case 0x7A:
+			case 0x7B:
+			case 0x7C:
+			case 0x7D:
+			case 0x7E:
+			case 0x7F:
+				break;
+			case 0x80:
+			case 0x81:
+			case 0x82:
+			case 0x83:
+			case 0x84:
+			case 0x85:
+			case 0x86:
+			case 0x87:
+			case 0x88:
+			case 0x89:
+			case 0x8A:
+			case 0x8B:
+			case 0x8C:
+			case 0x8D:
+			case 0x8E:
+			case 0x8F:
+				break;
+			case 0xE0:
+				for (i = 0; i < 4; i++ )
+				{
+					MemCim.value++;
+					JumpTableE0[BuffIndex] += ( (unsigned int)(MemReadFast(MemCim)) << ( 8 * i ));
+				}	
+				BuffIndex++;
+				break;
+			case 0x66:
+				MemCim.value=63;
+				BuffIndex=0;
+				Flag = 0;
+				break;
+			default:
+				break;
+		}
+	}
+}
+
 
 // PIC18F452 program memóriájának törlése 64byte / block
 void PICFlashBlockErase(unsigned int Addr)

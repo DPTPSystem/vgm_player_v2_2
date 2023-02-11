@@ -98,6 +98,10 @@ volatile unsigned int  BufferSize=0;			// Buffer mérete
 volatile unsigned int  Error=0;					// Hiba számolása
 volatile unsigned long DataSize=0;				// Beérkezõ adat teljes mérete
 
+// PCM táblázat használatához
+volatile unsigned int PCMJumpIndex = 0;
+volatile unsigned int JumpTableE0[100];			// PCM ugró tábla
+
 #define PMBlock			64						// 1 bloc 64Kbyte
 #define PMWbyte			8						// 1 írás 8 byte
 #define PMemAddrStart	0x3000					// Program memória üres helyének kezdete
@@ -164,7 +168,11 @@ void main(void)
 
 	LATA &= 0x0F;
 	LATD = 0;
-					
+	
+	// Mielõtt elindítjuk a megszakítást, mentsük el 0xE0 parcskor érkezett PCM adat ugrásokat egy táblába
+	//memset(JumpTableE0, '\0', sizeof(JumpTableE0));
+	//PCMJumpSave();
+	
 	T2CONbits.TMR2ON = 1;
 	
 	/*for(i = 0; i<16; i++)
