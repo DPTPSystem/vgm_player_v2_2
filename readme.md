@@ -180,15 +180,11 @@ teljes PCM adat folyamban. A programból teljesen nem vettem ki, de ki lett
 kommentelve, hogy az ne befolyásolja a működést. A PIC18F452 nem rendelkezik
 elegendő memóriával ahhoz, hogy nagy méretá tömböt hozzunk létre, de kisebb 
 PCM adatot tartalmazó zenénél a tesztelés nem hozott jobb eredményt az 
-eddiginél.
-Programon belül érintett az interupt.h, módosítások:
-`MemCim.value+=4; \n\r
-if(PCMLoad)
-{
-	BuffIndex = JumpTableE0[PCMJumpIndex++];
-}
-else
-{
-	PCMMemAdr.value = pcmBufferPositionStart;
-	PCMMemAdr.value += JumpTableE0[PCMJumpIndex++];
-}`
+eddiginél. Érintett fájlok:
+- main.c
+- - `volatile unsigned int PCMJumpIndex = 0;`
+- - `volatile unsigned int JumpTableE0[100];`
+- function.h
+- - `void PCMJumpSave(void)`
+- interrupt.h
+- - `else if(Sample==0xE0)`
