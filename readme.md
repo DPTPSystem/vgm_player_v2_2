@@ -174,7 +174,7 @@ tudja kiszolgálni. PCM nélküli VGM-ek esetén használható a program, talán
 kisebb PCM adatok esetén is elfogadható, de semmi kép nem tökéletes.
 
 # 2023.02.11. Ugró tábla tesztelése
-- utolsó probálkozásom az ugró tábla létrehozása 0xE0 parancsoknál. Ezen 
+- Utolsó probálkozásom az ugró tábla létrehozása 0xE0 parancsoknál. Ezen 
 parancsokat 4 byte cím adat követi, amelyek a PCM pozicióját adja meg a 
 teljes PCM adat folyamban. A programból teljesen nem vettem ki, de ki lett
 kommentelve, hogy az ne befolyásolja a működést. A PIC18F452 nem rendelkezik
