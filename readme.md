@@ -190,7 +190,7 @@ eddiginél. Érintett fájlok:
 - - `else if(Sample==0xE0)`
 
 # 2023.02.11. PIC18F46K22
-- Megszakítás oszcilloszkóp mérési eredménye 82.26uS/2 = 41.13uS sajnis egy olyan 
+- Megszakítás oszcilloszkóp mérési eredménye 82.26uS/2 = 41.13uS sajnos egy olyan 
 paraccsal futtatva, amely egyik feltételbe sem ugrik be, vagy is csak azt vizsgálja 
 van e ilyen parancs. Sajnos az optimalizálással is csak 41,13uS alatt végez a 
 megszakítás, amely 22.5uS periódusra van állítva. Kivesebb ugyan mint 18F452 esetében, 
